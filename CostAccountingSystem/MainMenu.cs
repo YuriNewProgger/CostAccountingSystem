@@ -57,7 +57,7 @@ namespace CostAccountingSystem
 
         private void Button_Inventory_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Данный фйнкционал временно не работает", "Информация",
+            MessageBox.Show("Данный функционал не работает в демо версии", "Информация",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
