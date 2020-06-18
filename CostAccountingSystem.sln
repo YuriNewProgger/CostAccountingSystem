@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CostAccountingSystem", "CostAccountingSystem\CostAccountingSystem.csproj", "{D466F7B4-EF09-4331-ADB4-964F89E821A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D466F7B4-EF09-4331-ADB4-964F89E821A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D466F7B4-EF09-4331-ADB4-964F89E821A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D466F7B4-EF09-4331-ADB4-964F89E821A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D466F7B4-EF09-4331-ADB4-964F89E821A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78CDDAA9-E8DC-4EEF-BF13-B8F0704C5C88}
+	EndGlobalSection
+EndGlobal

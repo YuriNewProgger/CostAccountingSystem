@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D466F7B4-EF09-4331-ADB4-964F89E821A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CostAccountingSystem</RootNamespace>
+    <AssemblyName>CostAccountingSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Leftovers\ProductLeftover.cs" />
+    <Compile Include="Product\Goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\Goods.Designer.cs">
+      <DependentUpon>Goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\OrderItem.cs" />
+    <Compile Include="Product\Product.cs" />
+    <Compile Include="Product\ProductSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product\ProductSetup.Designer.cs">
+      <DependentUpon>ProductSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchase\Purchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\Purchase.Designer.cs">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase\Order.cs" />
+    <Compile Include="Purchase\PurchaseSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase\PurchaseSetup.Designer.cs">
+      <DependentUpon>PurchaseSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Leftovers\Leftovers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leftovers\Leftovers.Designer.cs">
+      <DependentUpon>Leftovers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteOff\WriteOff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteOff\WriteOff.Designer.cs">
+      <DependentUpon>WriteOff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteOff\WriteOffItem.cs" />
+    <Compile Include="WriteOff\WriteOffProducts.cs" />
+    <Compile Include="WriteOff\WriteOffSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WriteOff\WriteOffSetup.Designer.cs">
+      <DependentUpon>WriteOffSetup.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Product\Goods.resx">
+      <DependentUpon>Goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product\ProductSetup.resx">
+      <DependentUpon>ProductSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Purchase\Purchase.resx">
+      <DependentUpon>Purchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase\PurchaseSetup.resx">
+      <DependentUpon>PurchaseSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leftovers\Leftovers.resx">
+      <DependentUpon>Leftovers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteOff\WriteOff.resx">
+      <DependentUpon>WriteOff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteOff\WriteOffSetup.resx">
+      <DependentUpon>WriteOffSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

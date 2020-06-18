@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<orders>
+  <order>
+    <dateOfPayment>21.03.2020</dateOfPayment>
+    <dateOfReceiving>21.03.2020</dateOfReceiving>
+    <orderItems>
+      <orderItem>
+        <product>
+          <name>Шампунь</name>
+          <discription>Против перхоти</discription>
+          <splitting>150</splitting>
+          <measures>мл.</measures>
+          <limit>5</limit>
+        </product>
+        <count>6</count>
+        <price>150</price>
+      </orderItem>
+    </orderItems>
+    <price>900</price>
+  </order>
+</orders>
